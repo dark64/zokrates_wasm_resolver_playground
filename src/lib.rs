@@ -46,7 +46,7 @@ pub fn compile(source: JsValue) -> JsValue {
     // we call the zokrates compile function with our closure
     compile_core::<FieldPrime, _>(
         source.as_string().unwrap(),
-        "path/to/main".to_string(),
+        "main".to_string(),
         Some(resolve_closure),
     )
     .unwrap()
